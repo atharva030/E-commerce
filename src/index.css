@@ -1,13 +1,59 @@
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.hamburger {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: green;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  height: 46px;
+  padding: 0px 9px;
+  z-index: 1000;
+  display: none;
+}
+.carousel .carousel-status {
+  display: none;
+}
+.carousel .control-dots {
+  display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.carousel.carousel-slider .control-arrow {
+  display: none;
+}
+.sign-container {
+  width: 30rem;
+  height: 11rem;
+}
+@media  (max-width: 1240px) {
+  header .navbar ul li a {
+    padding: 1rem;
+  }
+  .hamburger {
+    display: block;
+  } 
+}
+@media (max-width:991px) {
+
+  .img-container {
+    padding: 17px;
+  }
 }
