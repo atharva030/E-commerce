@@ -1,6 +1,7 @@
 import "./App.css";
 import Productlist from "./Components/Productlist";
 import Products from "./Components/Products";
+import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Login from "./Components/Login";
 import { useState } from "react";
@@ -29,6 +30,7 @@ function App() {
            
         </Routes>
       </Router>
+      <Footer/>
     </>
   );
 }
